@@ -1,7 +1,7 @@
 import React from 'react';
 
 import DrawerToggleButton from '../DrawerButton/DrawerButton'
-import './Toolbar.module.css';
+import './Toolbar.css';
 
 const toolbar = props => (
     <header className="toolbar">
@@ -13,7 +13,7 @@ const toolbar = props => (
                 <a href="/">RYAN KOPEC</a>
             </div>
             <div className="spacer" />
-            <div className="toolbar_navigation-items">
+            <div className="toolbar__navigation-items">
                 <ul>
                     <li>
                         <a href="/">About</a>

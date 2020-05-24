@@ -1,6 +1,6 @@
 import React from "react"
 
-import "./SideDrawer.module.css"
+import "./SideDrawer.css"
  
 const sideDrawer = (props) => {
   let drawerClasses = 'side-drawer'
@@ -11,10 +11,16 @@ const sideDrawer = (props) => {
     <nav className={drawerClasses}>
       <ul>
         <li>
-          <a href="/">Products</a>
+            <a href="/">About</a>
         </li>
         <li>
-          <a href="/">Users</a>
+            <a href="/">Articles</a>
+        </li>
+        <li>
+            <a href="/">Projects</a>
+        </li>
+        <li>
+            <a href="/">Contact</a>
         </li>
       </ul>
     </nav>
