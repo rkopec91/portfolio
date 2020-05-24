@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 
 import { BrowserRouter, Route, Link } from 'react-router-dom'; 
@@ -12,24 +12,24 @@ import Backdrop from './Components/Backdrop/Backdrop';
 import './App.css';
 import { render } from 'react-dom';
  
-function App() {
+class App extends Component {
   state = {
     sideDrawerOpen: false
   };
 
   drawerToggleClickHandler = () => {
     this.setState(prevState => {
-      return { sideDrawerOpen: !prevState.sideDrawerOpen }
+      return { sideDrawerOpen: !prevState.sideDrawerOpen };
     });
   };
 
   backdropClickHandler = () => {
-    this.setState({ sideDrawerOpen: false })
-  }
+    this.setState({ sideDrawerOpen: false });
+  };
 
 
   render() {
-    let backdrop
+    let backdrop;
 
     if (this.state.sideDrawerOpen) {
       backdrop = <Backdrop click={this.backdropClickHandler} />;
@@ -44,14 +44,12 @@ function App() {
             <Route exact path="/" component={Projects} />
             <Route path="/articles" component={Articles} />
             <Route path="/about" component={About} />
-      
             <div className="navigation">
               <img src={logo} className="logo-image" alt="The Logo" />
               <div className="navigation-sub">
                 <Link to="/" className="item">Projects</Link>
                 <Link to="/articles" className="item">Articles</Link>
                 <Link to="/about" className="item">About</Link>
-      
               </div>
             </div>
           </div>
@@ -59,7 +57,6 @@ function App() {
       </div>
     );
   }
-  
 }
- 
+
 export default App;
