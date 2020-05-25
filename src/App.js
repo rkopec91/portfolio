@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Link } from 'react-router-dom';
 import Projects from './Components/Projects/Projects'; 
 import Articles from './Components/Articles/Articles'; 
 import About from './Components/About/About'; 
-
+import Footer from './Components/Footer/Footer';
 import Toolbar from './Components/Toolbar/Toolbar';
 import SideDrawer from './Components/SideDrawer/SideDrawer';
 import Backdrop from './Components/Backdrop/Backdrop';
@@ -36,6 +36,7 @@ class App extends Component {
     }
     return (
       <div style={{ height: '100%' }}>
+        
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
@@ -54,6 +55,8 @@ class App extends Component {
             </div>
           </div>
         </BrowserRouter>
+        
+        <Footer />
       </div>
     );
   }
