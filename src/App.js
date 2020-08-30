@@ -9,6 +9,7 @@ import Footer from './Components/Footer/Footer';
 import Toolbar from './Components/Toolbar/Toolbar';
 import SideDrawer from './Components/SideDrawer/SideDrawer';
 import Backdrop from './Components/Backdrop/Backdrop';
+import Main from './Components/Main/Main';
 import './App.css';
 import { render } from 'react-dom';
  
@@ -40,21 +41,25 @@ class App extends Component {
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
-        <BrowserRouter>
-          <div className="App">
-            <Route exact path="/" component={Projects} />
-            <Route path="/articles" component={Articles} />
-            <Route path="/about" component={About} />
-            <div className="navigation">
-              <img src={logo} className="logo-image" alt="The Logo" />
-              <div className="navigation-sub">
-                <Link to="/" className="item">Projects</Link>
-                <Link to="/articles" className="item">Articles</Link>
-                <Link to="/about" className="item">About</Link>
+        <div>
+          <Main/>
+          {/* <BrowserRouter>
+            <div className="App">
+              <Route exact path="/" component={Projects} />
+              <Route path="/articles" component={Articles} />
+              <Route path="/about" component={About} />
+              <div className="navigation">
+                <img src={logo} className="logo-image" alt="The Logo" />
+                <div className="navigation-sub">
+                  <Link to="/" className="item">Projects</Link>
+                  <Link to="/articles" className="item">Articles</Link>
+                  <Link to="/about" className="item">About</Link>
+                </div>
               </div>
             </div>
-          </div>
-        </BrowserRouter>
+          </BrowserRouter> */}
+        </div>
+        
         
         <Footer />
       </div>
