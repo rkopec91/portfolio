@@ -1,9 +1,9 @@
-import React from "react"
-import logo from './44616.jpg';
+import React from "react";
+import './Main.css';
 const Main = (props) => {
   return (
     <div>
-      <img src={logo} className="me-image" alt="The profile pic" />
+      <img src='44616.jpg' className="port-image" alt="The profile pic" />
     </div>
   )
 }
