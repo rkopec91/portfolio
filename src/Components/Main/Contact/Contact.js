@@ -1,12 +1,12 @@
 import React from "react"
  
-const About = (props) => {
+const Contact = (props) => {
   return (
     <div>
-      <h1>About</h1>
+      <h1>Contact</h1>
       <p>adofipjapsodif</p>
     </div>
   )
 }
  
-export default About;
+export default Contact;

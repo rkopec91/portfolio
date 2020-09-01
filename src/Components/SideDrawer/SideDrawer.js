@@ -11,16 +11,16 @@ const sideDrawer = (props) => {
     <nav className={drawerClasses}>
       <ul>
         <li>
-            <a href="/">About</a>
+            <a onClick={() => props.pageClickHandler([true, false, false, false])}>About</a>
         </li>
         <li>
-            <a href="/">Articles</a>
+            <a onClick={() => props.pageClickHandler([false, true, false, false])}>Resume</a>
         </li>
         <li>
-            <a href="/">Projects</a>
+            <a onClick={() => props.pageClickHandler([false, false, true, false])}>Projects</a>
         </li>
         <li>
-            <a href="/">Contact</a>
+            <a onClick={() => props.pageClickHandler([false, false, false, true])}>Contact</a>
         </li>
       </ul>
     </nav>

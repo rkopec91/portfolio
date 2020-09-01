@@ -10,22 +10,22 @@ const toolbar = props => (
                 <DrawerToggleButton click={props.drawerClickHandler} />
             </div>
             <div className="toolbar__logo">
-                <a href="/">RYAN KOPEC</a>
+                <a onClick={() => props.pageClickHandler([true, false, false, false])}>RYAN KOPEC</a>
             </div>
             <div className="spacer" />
             <div className="toolbar__navigation-items">
                 <ul>
                     <li>
-                        <a href="/">About</a>
+                        <a onClick={() => props.pageClickHandler([true, false, false, false])}>About</a>
                     </li>
                     <li>
-                        <a href="/">Articles</a>
+                        <a onClick={() => props.pageClickHandler([false, true, false, false])}>Resume</a>
                     </li>
                     <li>
-                        <a href="/">Projects</a>
+                        <a onClick={() => props.pageClickHandler([false, false, true, false])}>Projects</a>
                     </li>
                     <li>
-                        <a href="/">Contact</a>
+                        <a onClick={() => props.pageClickHandler([false, false, false, true])}>Contact</a>
                     </li>
                 </ul>
             </div>
