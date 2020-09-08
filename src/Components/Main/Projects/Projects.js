@@ -8,10 +8,10 @@ function Projects(props) {
     <div>
       <h1>Projects</h1>
       {/* <Thumbnail
-        link=""
-        image=""
-        title=""
-        category=""
+        link="https://github.com/rkopec91/Behavioral_Cloning"
+        image="logo192.png"
+        title="Behavior Cloning"
+        category="Deep Learning"
       /> */}
     </div>
   )
