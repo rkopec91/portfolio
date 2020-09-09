@@ -1,10 +1,10 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import '../../../../App.css';
+import './Thumbnail.css'
  
 function Thumbnail(props) {
   return (
-    <div className="project">
+    <div className="card">
       <a href={props.link}>link to project</a>
       <div className="project-image">
           <img src={props.image} alt="Project"/>

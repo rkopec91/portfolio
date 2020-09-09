@@ -7,12 +7,14 @@ function Projects(props) {
     // Render a Thumbnail component
     <div>
       <h1>Projects</h1>
-      <Thumbnail
-        link="https://github.com/rkopec91/Behavioral_Cloning"
-        image="logo192.png"
-        title="Behavior Cloning"
-        category="Deep Learning"
-      />
+      <div className="projects">
+        <Thumbnail
+          link="https://github.com/rkopec91/Behavioral_Cloning"
+          image="logo192.png"
+          title="Behavior Cloning"
+          category="Deep Learning"
+        />
+      </div>
     </div>
   )
 }
