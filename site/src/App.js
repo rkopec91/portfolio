@@ -1,22 +1,19 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 
-import { BrowserRouter, Route, Link } from 'react-router-dom'; 
-import Projects from './Components/Main/Projects/Projects'; 
-import Articles from './Components/Main/Articles/Articles'; 
-import About from './Components/Main/About/About'; 
+
 import Footer from './Components/Footer/Footer';
 import Toolbar from './Components/Toolbar/Toolbar';
 import SideDrawer from './Components/SideDrawer/SideDrawer';
 import Backdrop from './Components/Backdrop/Backdrop';
 import Main from './Components/Main/Main';
 import './App.css';
-import { render } from 'react-dom';
  
 class App extends Component {
   state = {
     sideDrawerOpen: false,
-    page: [true, false, false, false]
+    page: [true, false, false, false],
+    disabled: false,
+    emailSent: false
   };
 
   drawerToggleClickHandler = () => {

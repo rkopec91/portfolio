@@ -13,7 +13,7 @@ const Main = (props) => {
   } else if (props.page[2]) {
     page = <Projects/>
   } else {
-    page = <Contact/>
+    page = <Contact submit={props.handleSubmit}/>
   }
 
   return (
