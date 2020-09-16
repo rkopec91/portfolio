@@ -23,6 +23,7 @@
     color: white;
     text-decoration: none;
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .spacer {
@@ -43,11 +44,13 @@
 .toolbar__navigation-items a {
     color: white;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .toolbar__navigation-items a:hover,
 .toolbar__navigation-items a:active {
     color: #fa923f;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
