@@ -29,6 +29,7 @@ app.post('/api/email', (req, res, next) => {
         subject: 'Portfolio Website Contact',
         text: req.body.message
     }
+    console.log(msg)
 
     sendGrid.send(msg).then(result => {
         res.status(200).json({
@@ -36,6 +37,8 @@ app.post('/api/email', (req, res, next) => {
         })
     }).catch(err => {
         console.log('error: ', err);
+
+        console.log(err.response.body)
         res.status(401).json({
             success: false
         });

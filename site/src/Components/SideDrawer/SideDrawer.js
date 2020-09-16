@@ -20,7 +20,7 @@ const sideDrawer = (props) => {
             <a onClick={() => props.pageClickHandler([false, false, true, false])}>Projects</a>
         </li>
         <li>
-            <a onClick={() => props.pageClickHandler([false, false, false, true])}>Contact</a>
+            <a href="mailto:ryankopec91@gmail.com">Contact</a>
         </li>
       </ul>
     </nav>
