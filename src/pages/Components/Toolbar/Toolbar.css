@@ -3,6 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 100;
     background: #16066e;
     /* background: #521751; */
     height: 56px;
