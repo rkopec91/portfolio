@@ -1,4 +1,20 @@
-.projects {
-    width:1000px;
-}
+.carousel-caption h3 {
+    font-family:    Garamond;
+    font-size:      3em;
+    color:          red !important;
+    }
+    /* Description text */
+    .carousel-caption p {
+    font-family:    Garamond;
+    font-size:      2em;
+    color:          blue !important;
+    }
+    /* Button text */
+    span {
+    font-family:    Garamond;
+    font-size:      1em;
+    color:          yellow;
+    }
+
+
 
