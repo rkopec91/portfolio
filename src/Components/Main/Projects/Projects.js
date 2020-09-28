@@ -17,37 +17,40 @@ function Projects(props) {
         <Carousel>
           <Carousel.Item>
             <img
-              // className="d-block w-100"
-              src="logo192.png"
+              className="d-block w-30"
+              src="Behavior.png"
               alt="First slide"
             />
             <Carousel.Caption>
-              <h3 className="text">First slide label</h3>
+              <h3 className="text">Behavior Cloning Project</h3>
               <p className="text">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <a href="https://github.com/rkopec91/Behavioral_Cloning">Link</a>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img
-              // className="d-block w-100"
-              src="logo192.png"
+              className="d-block w-30"
+              src="Augmented-Random-Search.png"
               alt="Third slide"
             />
 
             <Carousel.Caption>
-              <h3 className="text">Second slide label</h3>
+              <h3 className="text">Augmented Random Search</h3>
               <p className="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="https://github.com/rkopec91/Augmented-Random-Search">Link</a>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img
-              // className="d-block w-100"
+              className="d-block w-30"
               src="logo192.png"
               alt="Third slide"
             />
 
             <Carousel.Caption>
-              <h3 className="text">Third slide label</h3>
+              <h3 className="text">Reinforcement Learning Projects</h3>
               <p className="text">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              <a href="https://github.com/rkopec91/reinforcement_learning_projects">Link</a>
             </Carousel.Caption>
           </Carousel.Item>
           
