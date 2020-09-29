@@ -7,11 +7,15 @@ import SideDrawer from './SideDrawer/SideDrawer';
 import Backdrop from './Backdrop/Backdrop';
 import Main from './Main/Main';
 import '../style/App.css';
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import About from './Main/About/About'
+import Resume from './Main/Resume/Resume'
+import Projects from './Main/Projects/Projects'
+import { Container } from 'react-bootstrap';
  
 class App extends Component {
   state = {
     sideDrawerOpen: false,
-    page: [true, false, false, false],
     disabled: false,
     emailSent: false
   };
@@ -26,12 +30,6 @@ class App extends Component {
     this.setState({ sideDrawerOpen: false });
   };
 
-  pageToggleClickHandler = (pages) => {
-    this.setState({ page: pages,
-                    sideDrawerOpen: false
-    })
-  }
-
 
   render() {
     let backdrop;
@@ -40,33 +38,17 @@ class App extends Component {
       backdrop = <Backdrop click={this.backdropClickHandler} />;
     }
     return (
-      <div style={{ height: '100%' }}>
-        
-        <Toolbar drawerClickHandler={this.drawerToggleClickHandler} pageClickHandler={this.pageToggleClickHandler}/>
-        <SideDrawer show={this.state.sideDrawerOpen} pageClickHandler={this.pageToggleClickHandler}/>
-        {backdrop}
-        
-        <Main page={this.state.page}/>
-        {/* <BrowserRouter>
-          <div className="App">
-            <Route exact path="/" component={Projects} />
-            <Route path="/articles" component={Articles} />
-            <Route path="/about" component={About} />
-            <div className="navigation">
-              <img src={logo} className="logo-image" alt="The Logo" />
-              <div className="navigation-sub">
-                <Link to="/" className="item">Projects</Link>
-                <Link to="/articles" className="item">Articles</Link>
-                <Link to="/about" className="item">About</Link>
-              </div>
-            </div>
-          </div>
-        </BrowserRouter> */}
-      
-        
-        
-        <Footer />
-      </div>
+      <Router>
+        <Container className="p-0" fluid={true}>
+          <Toolbar drawerClickHandler={this.drawerToggleClickHandler} pageClickHandler={this.pageToggleClickHandler}/>
+          <SideDrawer show={this.state.sideDrawerOpen} pageClickHandler={this.pageToggleClickHandler}/>
+          {backdrop}
+          <Route path="/" exact render={() => <About/>}/>
+          <Route path="/Resume" exact render={() => <Resume/>}/>
+          <Route path="/Projects" exact render={() => <Projects/>}/>
+          <Footer />
+        </Container>
+      </Router>
     );
   }
 }

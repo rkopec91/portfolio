@@ -3,6 +3,7 @@ import '../../style/Main.css';
 import Resume from "./Resume/Resume";
 import Projects from './Projects/Projects';
 import About from './About/About';
+import TopCard from './TopCard/TopCard';
 const Main = (props) => {
   let page = null;
   if (props.page[0]) {
@@ -15,7 +16,7 @@ const Main = (props) => {
 
   return (
     <div className="main">
-      <img src='44616.jpg' className="port-image" alt="The profile pic" />
+      <TopCard/>
       {page}
     </div>
   )

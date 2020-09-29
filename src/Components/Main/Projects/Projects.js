@@ -14,7 +14,7 @@ function Projects(props) {
       <h1>Projects</h1>
       <div>
         
-        <Carousel>
+        {/* <Carousel>
           <Carousel.Item>
             <img
               className="d-block w-30"
@@ -54,7 +54,7 @@ function Projects(props) {
             </Carousel.Caption>
           </Carousel.Item>
           
-        </Carousel>
+        </Carousel> */}
       </div>
     </div>
   )

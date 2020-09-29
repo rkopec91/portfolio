@@ -3,7 +3,7 @@ import '../../../style/About.css';
 
 const About = (props) => {
   return (
-    <div>
+    <div className="about">
       <h1>About</h1>
       <p>
       I completed my Bachelor’s of Science Mechanical Engineering and received a minor in electrical engineering at Drexel University. Currently I am attending Georgia Institute of Technology for my Master’s in Computer Science with a specialization in machine learning/computer vision.  I am very interested in machine learning, deep learning, artificial intelligence, computer vision, natural language processing, web development, and software engineering.

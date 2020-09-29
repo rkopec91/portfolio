@@ -2,6 +2,7 @@ import React from 'react';
 
 import DrawerToggleButton from '../DrawerButton/DrawerButton'
 import '../../style/Toolbar.css';
+import {BrowserRouter as Router, Route, Link} from "react-router-dom"
 
 const toolbar = props => (
     <header className="toolbar">
@@ -16,13 +17,13 @@ const toolbar = props => (
             <div className="toolbar__navigation-items">
                 <ul>
                     <li>
-                        <a onClick={() => props.pageClickHandler([true, false, false, false])} className="anchor">About</a>
+                        <Link className="anchor" to='/'>About</Link>
                     </li>
                     <li>
-                        <a onClick={() => props.pageClickHandler([false, true, false, false])} className="anchor">Resume</a>
+                        <Link className="anchor" to='/Resume'>Resume</Link>
                     </li>
                     <li>
-                        <a onClick={() => props.pageClickHandler([false, false, true, false])} className="anchor">Projects</a>
+                        <Link className="anchor" to='/Projects'>Projects</Link>
                     </li>
                     <li>
                         <a href="mailto:ryankopec91@gmail.com" className="anchor">Contact</a>
