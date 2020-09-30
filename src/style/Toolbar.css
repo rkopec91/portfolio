@@ -20,7 +20,7 @@
     margin-left: 1rem;
 }
 
-.toolbar__logo a {
+.toolbar__logo Link {
     color: white !important;
     text-decoration: none;
     font-size: 1.5rem;

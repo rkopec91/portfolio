@@ -1,18 +1,19 @@
 import React from 'react';
-import Thumbnail from './Thumbnail/Thumbnail';
+import Card from './Card/Card';
 // import '../../../style/App.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../../../style/Projects.css';
+import Hero from '../Hero/Hero'
+import Carousel from './Carousel/Carousel'
 
 function Projects(props) {
   return (
     // Render a Thumbnail component
     <div>
-      <h1>Projects</h1>
-      <div>
+      <Hero title="Projects"/>
+      <Carousel/>
         
         {/* <Carousel>
           <Carousel.Item>
@@ -55,7 +56,6 @@ function Projects(props) {
           </Carousel.Item>
           
         </Carousel> */}
-      </div>
     </div>
   )
 }

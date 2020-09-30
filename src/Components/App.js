@@ -5,7 +5,6 @@ import Footer from './Footer/Footer';
 import Toolbar from './Toolbar/Toolbar';
 import SideDrawer from './SideDrawer/SideDrawer';
 import Backdrop from './Backdrop/Backdrop';
-import Main from './Main/Main';
 import '../style/App.css';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import About from './Main/About/About'
