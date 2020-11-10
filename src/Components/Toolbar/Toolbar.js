@@ -2,7 +2,7 @@ import React from 'react';
 
 import DrawerToggleButton from '../DrawerButton/DrawerButton'
 import '../../style/Toolbar.css';
-import {BrowserRouter as Router, Route, Link} from "react-router-dom"
+import {Router, Link} from '@reach/router'
 
 const toolbar = props => (
     <header className="toolbar">
@@ -17,13 +17,13 @@ const toolbar = props => (
             <div className="toolbar__navigation-items">
                 <ul>
                     <li>
-                        <Link className="anchor" to='/'>About</Link>
+                        <Link className="anchor" to="/">About</Link>
                     </li>
                     <li>
-                        <Link className="anchor" to='/Resume'>Resume</Link>
+                        <Link className="anchor" to="Resume">Resume</Link>
                     </li>
                     <li>
-                        <Link className="anchor" to='/Projects'>Projects</Link>
+                        <Link className="anchor" to="Projects">Projects</Link>
                     </li>
                     <li>
                         <a href="mailto:ryankopec91@gmail.com" className="anchor">Contact</a>

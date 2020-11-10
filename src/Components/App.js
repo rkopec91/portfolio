@@ -6,12 +6,12 @@ import Toolbar from './Toolbar/Toolbar';
 import SideDrawer from './SideDrawer/SideDrawer';
 import Backdrop from './Backdrop/Backdrop';
 import '../style/App.css';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
-import About from './Main/About/About'
-import Resume from './Main/Resume/Resume'
-import Projects from './Main/Projects/Projects'
+import { Router, Link } from "@reach/router";
+import About from '../pages/About'
+import Resume from '../pages/Resume'
+import Projects from '../pages/Projects'
 import { Container } from 'react-bootstrap';
- 
+import { render } from "react-dom";
 class App extends Component {
   state = {
     sideDrawerOpen: false,
@@ -37,17 +37,22 @@ class App extends Component {
       backdrop = <Backdrop click={this.backdropClickHandler} />;
     }
     return (
-      <Router>
         <Container className="p-0" fluid={true}>
           <Toolbar drawerClickHandler={this.drawerToggleClickHandler} pageClickHandler={this.pageToggleClickHandler}/>
           <SideDrawer show={this.state.sideDrawerOpen} pageClickHandler={this.pageToggleClickHandler}/>
           {backdrop}
-          <Route path="/" exact render={() => <About/>}/>
-          <Route path="/Resume" exact render={() => <Resume/>}/>
-          <Route path="/Projects" exact render={() => <Projects/>}/>
+          <nav>
+            <Link to="Projects">Projects</Link>
+          </nav>
+          <Router>
+            <About path="/" />
+            <Resume path="Resume"/>
+            <Projects path="Projects"/>
+          </Router>
+          
           <Footer />
         </Container>
-      </Router>
+      
     );
   }
 }
