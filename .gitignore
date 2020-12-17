@@ -35,3 +35,16 @@ e2e-tests/gatsby-pnp/
 .cache/
 .netlify
 .Rhistory
+
+.idea/
+.vscode/
+*.sw*
+
+# lock files
+yarn.lock
+package-lock.json
+# ignore any lock file other than main lock file
+!/yarn.lock
+
+logs
+*.log
