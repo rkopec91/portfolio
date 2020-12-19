@@ -6,7 +6,6 @@ import { Link } from "gatsby"
 import positions from "../constants/positions"
 
 const Jobs = () => {
-  console.log(positions)
   const [value, setValue] = React.useState(0)
   const { company, position, date, desc } = positions[value]
 

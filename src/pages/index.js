@@ -11,6 +11,7 @@ export default () => {
     <Hero/>
     <Services/>
     <Jobs/>
+    <Projects title="featured projects" showLink/>
   </Layout>
 }
 // ...GatsbyImageSharpFluid

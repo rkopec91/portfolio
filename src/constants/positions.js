@@ -1,5 +1,5 @@
 import React from "react"
-import { FaCode, FaSketch, FaAndroid, FaRobot, FaEye } from "react-icons/fa"
+
 export default [
   {
     id: 1,
@@ -33,7 +33,11 @@ export default [
     desc: [
         {
             id: 1,
-            name: "Knowledge-Base AI"
+            name: "Helped students with Knowledge-Based Artificial Intelligence concepts."
+        },
+        {
+            id: 2,
+            name: "Graded Students work and answered questions about assignments."
         },
     ]
   },
@@ -82,6 +86,30 @@ export default [
         {
             id: 4,
             name: "Collaborated with cross-functional engineering teams to execute new filters and algorithms with C++, Git, and Jenkins to improve the system’s performance."
+        },
+    ]
+  },
+  {
+    id: 5,
+    company: "Lockheed Martin",
+    position: "Scrum Master",
+    date: "August 2016 - August 2017",
+    desc: [
+        {
+            id: 1,
+            name: "Managed JIRA, conflicts, and backlog for a team of eight engineers."
+        },
+        {
+            id: 2,
+            name: "Held sprint planning meetings, retrospectives, and daily scrums."
+        },
+        {
+            id: 3,
+            name: "Worked closely with product owner and business development leads."
+        },
+        {
+            id: 4,
+            name: "Reinforced and educated team on scrum and agile methods to improve planning."
         },
     ]
   },
