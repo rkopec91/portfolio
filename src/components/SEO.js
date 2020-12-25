@@ -1,7 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import icon from "../../src/assets/hero-img.png"
 
 
 const query = graphql`
@@ -25,7 +24,7 @@ const SEO = ({title, description}) => {
 
   return <Helmet htmlAttributes={{lang:"en"}} title={`${title} | ${siteTitle}`}>
     <meta name="description" content={description || siteDesc} />
-    <link rel="icon" href={icon} />
+    <link rel="icon" href={image} />
   </Helmet>
 }
 

@@ -10,7 +10,7 @@ module.exports = {
     description: "This my Portfolio Site",
     author: "@ryankopec",
     twitterUsername: "@Rpec10",
-    image: "../../src/assets/hero-img.png",
+    image: "/hero-img.png",
     siteUrl: "https://ryankopec.com",
   },
   plugins: [

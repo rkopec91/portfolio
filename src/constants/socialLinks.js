@@ -6,7 +6,8 @@ import {
   FaBehanceSquare,
   FaTwitterSquare,
   FaGithub,
-  FaInstagram
+  FaInstagram,
+  FaFilePdf
 } from "react-icons/fa"
 
 const data = [
@@ -30,6 +31,11 @@ const data = [
     icon: <FaInstagram className="social-icon"></FaInstagram>,
     url: "https://www.instagram.com/rkopec91/",
   },
+  {
+    id: 5,
+    icon: <FaFilePdf className="social-icon"></FaFilePdf>,
+    url: "/Ryan_Kopec_Resume.pdf"
+  }
 ]
 const links = data.map(link => {
   return (
