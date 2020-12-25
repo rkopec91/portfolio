@@ -6,12 +6,12 @@
 
 module.exports = {
   siteMetadata: {
-    title: "WebDev Portfolio",
-    description: "This is WebDev Portfolio Site",
-    author: "@webdev",
-    twitterUsername: "@john_smilga",
-    image: "/twitter-img.png",
-    siteUrl: "https://testing-strapi-gatsby-build.netlify.app",
+    title: "Ryan Kopec",
+    description: "This my Portfolio Site",
+    author: "@ryankopec",
+    twitterUsername: "@Rpec10",
+    image: "../../src/assets/hero-img.png",
+    siteUrl: "https://ryankopec.com",
   },
   plugins: [
     `gatsby-transformer-sharp`,
@@ -36,7 +36,8 @@ module.exports = {
         contentTypes: [],
         singleTypes: [],
       },
-    },
+    }
+    
     // {
     //   resolve: `gatsby-plugin-prefetch-google-fonts`,
     //   options: {

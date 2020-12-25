@@ -3,6 +3,7 @@ import Layout from "../components/Layout"
 import { graphql, useStaticQuery } from "gatsby"
 import Title from "../components/Title"
 import Image from "gatsby-image"
+import SEO from "../components/SEO"
 
 const query = graphql`
 {
@@ -27,6 +28,7 @@ const About = () => {
   } = useStaticQuery(query)
 
   return <Layout>
+    <SEO title="About" description="This is the about page for ryankopec.com"/>
     <section className="about-page">
       <div className="section-center about-center">
         <Image fluid={fluid} className="about-img"/>
