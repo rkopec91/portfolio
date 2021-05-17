@@ -2,9 +2,6 @@ import React from "react"
 import {
   FaFacebookSquare,
   FaLinkedin,
-  FaDribbbleSquare,
-  FaBehanceSquare,
-  FaTwitterSquare,
   FaGithub,
   FaInstagram,
   FaFilePdf
