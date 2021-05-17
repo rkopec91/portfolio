@@ -12,7 +12,7 @@ export default () => {
     <Hero/>
     <Services/>
     <Jobs/>
-    <Education/>
+    {/* <Education/> */}
     <Projects title="featured projects" showLink/>
   </Layout>
 }
