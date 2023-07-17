@@ -1,8 +1,36 @@
 import React from "react"
 
 export default [
-  {
+    {
     id: 1,
+    company: "Amazon Web Services",
+    position: "Software Development Engineer",
+    date: "October 2021 - Present",
+    desc: [
+        {
+            id: 1,
+            name: "Authored and presented design documents for new features to Code Catalyst data storage system."
+        },
+        {
+            id: 2,
+            name: "Utilized lambda functions, EKS, Step functions, S3, DynamoDB and other AWS products to develop new features for my team’s service (storage system for Code Catalyst)."
+        },
+        {
+            id: 3,
+            name: "Constructed new products Typescript and Java to store, transform and deliver customer data which will be used by other Code Catalyst services."
+        },
+        {
+            id: 4,
+            name: "Developed tools to perform Ops tasks to expose root cause and interact with service components in Typescript."
+        },
+        {
+            id: 5,
+            name: "While on-call, worked with other teams within Code Catalyst from a variety of different services to find the root cause of the issues and devise a solution."
+        },
+    ]
+  },
+  {
+    id: 2,
     company: "CVision AI",
     position: "Senior Algorithm Developer",
     date: "January 2020 - April 2020",
@@ -26,7 +54,7 @@ export default [
     ]
   },
   {
-    id: 2,
+    id: 3,
     company: "Georgia Tech",
     position: "Graduate Teaching Assistant",
     date: "September 2018 - December 2019",
@@ -42,7 +70,7 @@ export default [
     ]
   },
   {
-    id: 3,
+    id: 4,
     company: "Slyce",
     position: "Software Engineer",
     date: "April 2019 - August 2019",
@@ -66,7 +94,7 @@ export default [
     ]
   },
   {
-    id: 4,
+    id: 5,
     company: "Lockheed Martin",
     position: "Software Engineer",
     date: "March 2015 - April 2019",
@@ -90,7 +118,7 @@ export default [
     ]
   },
   {
-    id: 5,
+    id: 6,
     company: "Lockheed Martin",
     position: "Scrum Master",
     date: "August 2016 - August 2017",
